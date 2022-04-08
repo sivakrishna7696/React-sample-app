@@ -6,6 +6,7 @@ import ContactUs from './ContactUs';
 import ListsAndKeys from './ListsAndKeys';
 import Pagination from './Pagination';
 import TodoAppUseEffect from './TodoAppUseEffect';
+import UseeffectPagination from './UseeffectPagination';
 import User from './User';
 import UseStateHook from './UseStateHook'
 
@@ -21,6 +22,7 @@ function RoutesComp() {
             <Route path='pagination' element={<Pagination />} />
             <Route path='usestate' element={<UseStateHook />} />
             <Route path='useEffect' element={<TodoAppUseEffect />} />
+            <Route path="useeffectpagination" element={<UseeffectPagination />} />
         </Routes>
     </div>
   )

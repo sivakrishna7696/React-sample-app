@@ -44,7 +44,7 @@ export class Pagination extends Component {
     }
 
     componentWillUnmount(){
-        alert('unmounting')
+        // alert('unmounting')
     }
 
   render() {

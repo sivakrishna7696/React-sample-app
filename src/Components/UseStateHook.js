@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 
 function UseStateHook() {
 
@@ -7,7 +7,32 @@ function UseStateHook() {
     // console.log(useState());
     const [count,setCount] =  useState(0);
    
+    useEffect(()=>{
+        console.log("use effect triggered")
+    })
     
+    // mounting phase 
+    // similar to componentdidmount
+        useEffect(()=>{
+            console.log("mounting phase triggered");
+        },[])
+
+    // updating phase
+    // similar to componentupdate
+        useEffect(()=>{
+            console.log("this is updating phase");
+        },[count])
+
+
+    //unmounting phase
+    // similar to componentwillunmount
+    useEffect(()=>{
+        return ()=>{
+            console.log('unmounting phase');
+        }
+    },[count])
+
+
     const handleIncrement = ()=>{
         setCount(count+5);
     }

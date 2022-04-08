@@ -20,6 +20,8 @@ function Header() {
         <Link to="/pagination" className="nav-link" href="#">Pagination</Link>
         <Link to="/usestate" className="nav-link" href="#">useStateHook</Link>
         <Link to="/useeffect" className="nav-link" href="#">Todo</Link>
+        <Link to="/useeffectpagination" className="nav-link" href="#">useEffectPagination</Link>
+
         <a  className="nav-link" href="#">Pricing</a>
         <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
       </div>
