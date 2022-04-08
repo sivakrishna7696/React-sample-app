@@ -33,7 +33,7 @@ function UseeffectPagination() {
     <div className=''>
         <h2>Pagination</h2>
         <div className='d-flex justify-content-center'>
-        <table className='border border-primary text-center'>
+        <table className='border border-primary'>
             <thead>
             <tr className='border border-primary'>
                 <th>user id</th>
@@ -45,8 +45,8 @@ function UseeffectPagination() {
             
             <tbody>
                 {userData.map((user)=>(
-                    <tr className='border border-primary m-4' style={{"padding":"20px"}}>
-                        <td style={{"padding":"20px"}}>{user.id}</td>
+                    <tr key={user.id} className='border border-primary m-4'>
+                        <td>{user.id}</td>
                         <td>{user.title}</td>
                         <td>{user.firstName}</td>
                         <td>{user.lastName}</td>
