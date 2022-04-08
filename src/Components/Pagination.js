@@ -49,6 +49,7 @@ export class Pagination extends Component {
 
   render() {
     return (
+        <>
       <div className="container">
         <div className='row'>
             {this.state.users && this.state.users.length>0 && this.state.users.map((user)=>(
@@ -79,6 +80,8 @@ export class Pagination extends Component {
         </div>
 
       </div>
+      </>
+
     )   
   }
 }
