@@ -1,0 +1,21 @@
+what is jsx?
+    - jsx makes it easier to write and add HTML in react.
+
+why we need jsx?
+    - it is faster than regular js because it performs optimization while 
+    tranlating the code to js.
+    - it is type-safe, most of the errors can be found at complitatiion time.
+    - it makes easier to create templates.
+
+
+what is babel?
+    - Babel is a javascript compiler that includes the ability to compile jsx into 
+    regular js.
+
+
+what is state?
+    - state is a javascript object that stores a components dynamic data and determines
+    the component's behaviour.Because state is dynamic.
+
+        - state can only use in class component.
+        - 
